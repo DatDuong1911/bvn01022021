@@ -1,0 +1,31 @@
+Bài 1: Tạo 1 website :
+localhost: 8000  Hiển thị giao diện trang chủ
+localhost:8000/login  Hiển thị giao diện trang login
+localhost:8000/download  Để download 1 ảnh về máy
+
+Hướng dẫn tạo khung chương trình, mọi người dựa vào khung này để hoàn thành nốt bài tập được giao:
+app.get(‘/’, func)  dùng res.sendFile
+app.get(‘/login’, func) dùng res.sendFile
+app.get(‘download;’ function) dùng res.download
+app.listen()
+
+
+Bài 2: Dùng Express Router tạo ra các đường dẫn
+localhost:8000/nodemy/javascipt/bai1 => in ra màn hình “Welcome bạn đến javascript bài 1” 
+localhost:8000/nodemy/javascipt/bai2 => in ra màn hình “Welcome bạn đến javascript bài 2” 
+localhost:8000/nodemy/html/bai1 => in ra màn hình “Welcome bạn đến html bài 1” 
+
+Hướng dẫn:
+Ở đây ta thấy các đường dẫn chung nhau bởi /nodemy,  thì sẽ thay đổi nội dung để in ra màn hình
+Gợi ý:
++ dùng router với những phần api không có chung đường dẫn.
+
+Bài 3: Lấy giá trị trên url
++ File Server.js
+var router  = require(‘./courseRouter’);
+app.use(‘/nodemy’, router);
++File courseRouter.js
+var router = Express.Router()
+ 	router.get(‘/:tenCourse/:tenbai’, function (req, res){    })   . 
+Ta dùng res.send trả vể req.params.tenCourse + req.params.tenCours
+Để xuất router ra để cho file server sử dụng thì sử dụng module.exports = router

@@ -1,0 +1,37 @@
+.container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+.introduce {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.intro-pic {
+    width: 40%;
+    padding: 10px 0 40px 0px;
+}
+
+.intro-content {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+    .introduce {
+        flex-direction: column;
+    }
+    .intro-pic {
+        width: 100%;
+    }
+    .intro-content {
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+    }
+}

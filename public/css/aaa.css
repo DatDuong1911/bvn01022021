@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 50px;
+}
+
+.map {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.contact-address {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px 0;
+}
+
+.phone-number:hover {
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+.send {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input {
+    width: 25%;
+    font-size: 20px;
+    height: 30px;
+    background-color: lightgrey;
+    border: none;
+}
+
+textarea {
+    width: 50%;
+    font-size: 20px;
+    background-color: lightgrey;
+    border: none;
+}
+
+.button {
+    width: 50%;
+    height: 40px;
+    background-color: lightcoral;
+    color: whitesmoke;
+    font-size: 24px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: sandybrown;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact-address {
+        width: 50%;
+    }
+    p {
+        margin: 0;
+    }
+    input {
+        width: 60%;
+        margin: 10px 0;
+    }
+    textarea {
+        margin: 10px auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+    .contact-address {
+        width: 70%;
+    }
+    p {
+        margin: 0;
+    }
+    input {
+        width: 100%;
+        margin: 10px 0;
+    }
+    textarea {
+        margin: 10px auto;
+        width: 100%;
+    }
+}

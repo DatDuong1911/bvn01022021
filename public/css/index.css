@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: green;
+    justify-content: center;
+}
+
+.header-logo {
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+    width: 30%;
+    height: auto;
+}
+
+.header-menu {
+    width: 70%;
+    height: auto;
+}
+
+.icon {
+    display: none;
+}
+
+#myLinks {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    color: white;
+    width: 10%;
+    font-size: 15px;
+    list-style: none;
+    margin-right: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu-item-home {
+    color: darkgreen;
+    width: 10%;
+    font-size: 15px;
+    list-style: none;
+    margin-right: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.menu-item:hover {
+    color: darkgreen;
+}
+
+.banner {
+    width: 100%;
+    height: 800px;
+    background-image: url("./vendor./img/mainimage.jpg");
+    background-size: cover;
+}
+
+.banner-content {
+    width: 80%;
+    height: 800px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-des {
+    width: 80%;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 30px 0 50px 0;
+}
+
+.banner-name {
+    width: 80%;
+    font-size: 40px;
+}
+
+.btn-my {
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.btn-my:hover {
+    background-color: gainsboro;
+}
+
+.btn-hire {
+    color: white;
+    width: 120px;
+    height: 50px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.btn-hire:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    width: 100%;
+    height: auto;
+    margin: 50px 0 50px 0;
+}
+
+.about-pic {
+    width: 40%;
+}
+
+.about-text {
+    width: 60%;
+    margin-left: 5px;
+}
+
+.about-top {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.about-bot {
+    font-size: 18px;
+    margin: 30px 0 30px 0;
+    font-family: sans-serif;
+}
+
+.btn-about {
+    color: white;
+    width: 120px;
+    height: 50px;
+    background: green;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.job {
+    width: 100%;
+    height: auto;
+}
+
+.job-list {
+    width: 100%;
+    height: auto;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+}
+
+.job-feature {
+    width: 30%;
+    height: auto;
+    margin-bottom: 30px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.job-feature:hover {
+    background-image: url("./images/g3.jpg");
+    background-position: center;
+    color: white;
+    transition-property: inherit;
+    transition-delay: 0.25s;
+}
+
+.job-title {
+    padding: 10px;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.job-pic {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.job-text {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 150%;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    padding: 50px 0 20px 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.view {
+    width: 100%;
+    height: auto;
+    padding: 50px 0 20px 0;
+}
+
+.view-pic {
+    width: 100%;
+    text-align: center;
+}
+
+.view-content {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.view-title {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    line-height: 300%;
+    font-family: sans-serif;
+}
+
+.view-text {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 17px;
+    color: lightslategrey;
+    padding: 10px 0 20px 0;
+    line-height: 150%;
+}
+
+.view-btn {
+    padding: 10px 0 10px 0;
+}
+
+.btn-view {
+    color: white;
+    width: 200px;
+    height: 50px;
+    background: green;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.designer {
+    width: 100%;
+    background-image: url("./images/g5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.designer-content {
+    width: 100%;
+    padding: 50px 0 20px 0;
+}
+
+.designer-text {
+    width: 70%;
+    font-size: 33px;
+    color: #eee;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.designer-pic {
+    width: 30%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.designer-pic-top {
+    border-radius: 50%;
+}
+
+.designer-pic-bot {
+    color: white;
+    line-height: 150%;
+}
+
+.freelance {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.freelance .container {
+    display: flex;
+}
+
+.freelance-text {
+    width: 40%;
+    font-family: sans-serif;
+}
+
+.freelance-text .freelance-subtitle {
+    padding: 20px 0 40px 0;
+}
+
+.freelance-pic {
+    width: 60%;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+
+.freelance-img {
+    width: 100%;
+    position: relative;
+    height: 210px;
+    margin: 10px 0;
+}
+
+.freelance-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.freelance-img button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.free-btn {
+    width: 80%;
+    height: 35px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.end {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+    background-image: url("./images/g5.jpg");
+}
+
+.end .container {
+    text-align: center;
+}
+
+.end .end-title {
+    margin: 30px 0 10px 0;
+}
+
+.end .end-title {
+    margin: 10px 0 30px 0;
+}
+
+.end-btn1 {
+    margin: 30px 0 10px 0;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background: green;
+    border: 1px solid none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.end-btn2 {
+    margin: 30px 0 10px 0;
+    color: black;
+    width: 200px;
+    height: 50px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 10px;
+    cursor: pointer;
+}
